@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Corporativo: Sistema a Medida | Onyx Nox Studios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body class="plan-detail-page" data-plan-page="prem">
+
+    <div class="nav-back-container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+        <a href="index.html" class="btn-back" data-i18n="back_home">← Volver al Inicio</a>
+        <div class="region-switcher" role="group" aria-label="Selector de región y moneda">
+            <button type="button" class="region-btn active" data-region="es">ES · €</button>
+            <button type="button" class="region-btn" data-region="us">US · $</button>
+        </div>
+    </div>
+
+    <main class="plan-detail-container">
+        <div class="plan-header">
+            <span class="plan-badge" data-i18n="pc_badge">Arquitectura Total 💎</span>
+            <h1 data-i18n="pc_title">Plan Corporativo: Sistema a Medida</h1>
+            <p class="plan-description" data-i18n="pc_desc">Tu departamento de ingeniería web externo. Creamos plataformas robustas con base de datos, gestión de reservas o comercio electrónico adaptadas a la operación de tu empresa.</p>
+            <div class="plan-price-large"><span id="detail-price">850 €</span> <span class="currency" id="detail-curr">EUR / Pago Único</span></div>
+        </div>
+
+        <div class="plan-grid">
+            <div class="plan-includes-box">
+                <h3 data-i18n="detail_includes_title">¿Qué incluye exactamente este plan?</h3>
+                <ul class="detailed-features-list">
+                    <li data-i18n="pc_f1"><strong>Plataforma Web Corporativa a Medida:</strong> Arquitectura escalable diseñada según los flujos reales de tu negocio.</li>
+                    <li data-i18n="pc_f2"><strong>Base de Datos & Sistema de Reservas / E-commerce:</strong> Gestión real de citas, inventario, usuarios o pasarela de pagos integrada.</li>
+                    <li data-i18n="pc_f3"><strong>Panel de Administración Privado:</strong> Interfaz intuitiva para que puedas actualizar precios, disponibilidad y contenido sin depender de soporte técnico.</li>
+                    <li data-i18n="pc_f4"><strong>Diseño UI/UX Exclusivo:</strong> Prototipado personalizado alineado con estándares internacionales de conversión.</li>
+                    <li data-i18n="pc_f5"><strong>SEO Técnico Avanzado + Analítica:</strong> Indexación optimizada y medición de tráfico y conversiones.</li>
+                    <li data-i18n="pc_f6"><strong>Soporte VIP y Capacitación:</strong> Sesión de entrenamiento por videollamada para tu equipo y 30 días de soporte prioritario.</li>
+                </ul>
+            </div>
+
+            <div class="plan-cta-box">
+                <h3 data-i18n="pc_cta_title">¿Listo para liderar tu sector?</h3>
+                <p data-i18n="pc_cta_desc">Agenda una sesión estratégica de diagnóstico para definir la arquitectura tecnológica ideal para tu empresa.</p>
+                
+                <button type="button" id="btn-contratar-detalle" class="btn-whatsapp-plan" data-i18n="pc_cta_btn">
+                    💎 Solicitar Plan Corporativo por WhatsApp
+                </button>
+
+                <div class="plan-requirements">
+                    <h4 data-i18n="req_title">Requisitos para iniciar:</h4>
+                    <ul>
+                        <li data-i18n="pc_req1">Reunión inicial de requerimientos (Google Meet / Zoom).</li>
+                        <li data-i18n="pc_req2">Material gráfico corporativo (logotipo, fotos o vídeos).</li>
+                        <li data-i18n="pc_req3">Información legal y políticas de privacidad del negocio.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

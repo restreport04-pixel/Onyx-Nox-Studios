@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acceso Ejecutivo | Sistema de Coworking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-body">
+
+  <div class="auth-wrapper">
+    <!-- Panel Izquierdo Visual -->
+    <div class="auth-visual">
+      <div class="auth-visual-overlay">
+        <a href="../../index.html" class="back-agency-link">← Volver a Onyx Nox Studios</a>
+        <div class="auth-brand-info">
+          <span class="auth-tag">ESPACIO EJECUTIVO & COWORKING</span>
+          <h1>Tu oficina lista cuando tú lo estés.</h1>
+          <p>Gestiona reservas por hora, día o mes en puestos flexibles, salas de juntas y oficinas privadas con disponibilidad en tiempo real.</p>
+          <ul class="auth-highlights">
+            <li>✓ Fibra óptica dedicada y salas equipadas</li>
+            <li>✓ Cálculo automático de tarifas y cupos</li>
+            <li>✓ Gestión centralizada de tus reservas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel Derecho Formularios -->
+    <div class="auth-form-panel">
+      <div class="auth-card">
+        <div class="auth-tabs">
+          <button type="button" class="auth-tab-btn active" data-target="panel-login">Iniciar Sesión</button>
+          <button type="button" class="auth-tab-btn" data-target="panel-registro">Registrarse</button>
+        </div>
+
+        <!-- FORMULARIO DE INICIO DE SESIÓN -->
+        <div id="panel-login" class="auth-panel active">
+          <h2>Bienvenido de nuevo</h2>
+          <p class="auth-subtitle">Ingresa tus credenciales para acceder al panel de reservas.</p>
+
+          <form id="form-login">
+            <p>
+              <label for="log-correo">Correo electrónico:</label>
+              <input type="email" id="log-correo" placeholder="ejecutivo@empresa.com" required>
+            </p>
+            <p>
+              <label for="log-clave">Contraseña:</label>
+              <input type="password" id="log-clave" placeholder="••••••••" required>
+            </p>
+            <p style="display:flex; align-items:center; justify-content:space-between;">
+              <span>
+                <input type="checkbox" id="log-recordar">
+                <label for="log-recordar">Recordarme</label>
+              </span>
+            </p>
+            <input type="submit" value="Ingresar al Sistema" style="width:100%; margin-top:0.5rem;">
+          </form>
+
+          <div class="demo-access-box">
+            <p>¿Quieres explorar el sistema como cliente demo?</p>
+            <button type="button" id="btn-demo-rapido" class="btn-demo-quick">⚡ Entrar con Cuenta Demo</button>
+          </div>
+        </div>
+
+        <!-- FORMULARIO DE REGISTRO -->
+        <div id="panel-registro" class="auth-panel">
+          <h2>Crear cuenta</h2>
+          <p class="auth-subtitle">Regístrate en segundos para reservar tu espacio ideal.</p>
+
+          <form id="form-registro">
+            <div class="auth-grid-2">
+              <p>
+                <label for="reg-nombre">Nombres:</label>
+                <input type="text" id="reg-nombre" placeholder="Tus nombres" required>
+              </p>
+              <p>
+                <label for="reg-apellido">Apellidos:</label>
+                <input type="text" id="reg-apellido" placeholder="Tus apellidos" required>
+              </p>
+            </div>
+
+            <div class="auth-grid-2">
+              <p>
+                <label for="reg-tipo-doc">Tipo de documento:</label>
+                <select id="reg-tipo-doc">
+                  <option value="cc">Cédula de ciudadanía</option>
+                  <option value="ce">Cédula de extranjería</option>
+                  <option value="pas">Pasaporte</option>
+                </select>
+              </p>
+              <p>
+                <label for="reg-doc">Número de documento:</label>
+                <input type="text" id="reg-doc" placeholder="1020304050" required>
+              </p>
+            </div>
+
+            <div class="auth-grid-2">
+              <p>
+                <label for="reg-tel">Teléfono:</label>
+                <input type="tel" id="reg-tel" placeholder="3001234567">
+              </p>
+              <p>
+                <label for="reg-perfil">Perfil:</label>
+                <select id="reg-perfil">
+                  <option value="freelance">Freelancer</option>
+                  <option value="emprendedor">Emprendedor / Empresa</option>
+                  <option value="estudiante">Estudiante</option>
+                </select>
+              </p>
+            </div>
+
+            <p>
+              <label for="reg-correo">Correo electrónico:</label>
+              <input type="email" id="reg-correo" placeholder="nombre@correo.com" required>
+            </p>
+
+            <div class="auth-grid-2">
+              <p>
+                <label for="reg-clave">Contraseña (mín. 6):</label>
+                <input type="password" id="reg-clave" minlength="6" required>
+              </p>
+              <p>
+                <label for="reg-clave2">Confirmar contraseña:</label>
+                <input type="password" id="reg-clave2" minlength="6" required>
+              </p>
+            </div>
+
+            <p style="margin-top:0.5rem;">
+              <input type="checkbox" id="reg-terminos" required>
+              <label for="reg-terminos">Acepto los términos y condiciones del servicio.</label>
+            </p>
+
+            <input type="submit" value="Crear Cuenta y Continuar" style="width:100%;">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

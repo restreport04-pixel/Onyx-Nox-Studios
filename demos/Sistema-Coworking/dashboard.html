@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel de Reservas | Sistema de Coworking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="dashboard-header">
+  <div class="header-top-bar">
+    <a href="../../index.html" class="agency-pill">← Portafolio Onyx Nox Studios</a>
+    <div id="user-session-bar" class="user-session-bar">
+      <!-- Se llena dinámicamente con JS -->
+    </div>
+  </div>
+  <h1>Sistema de Coworking</h1>
+  <p>Reserva tu espacio de trabajo por hora, por día o por mes con disponibilidad en tiempo real.</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#espacios">Espacios</a></li>
+    <li><a href="#tarifas">Tarifas</a></li>
+    <li><a href="#reservar">Crear reserva</a></li>
+    <li><a href="#consultar">Consultar reservas</a></li>
+    <li><a href="#preguntas">Preguntas frecuentes</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section id="inicio">
+  <h2>Bienvenido al Espacio Ejecutivo</h2>
+  <p>Nuestro coworking ofrece puestos de trabajo, escritorios fijos, salas de reuniones y oficinas privadas para freelancers, estudiantes, emprendedores y equipos corporativos.</p>
+  <ol>
+    <li>Explora nuestros espacios equipados con fibra óptica y salas ejecutivas.</li>
+    <li>Consulta las tarifas transparentes por hora, por día y por mes.</li>
+    <li>Crea una reserva verificando disponibilidad instantánea.</li>
+    <li>Gestiona, filtra o cancela tus reservas desde tu panel.</li>
+  </ol>
+  <p><b>Horario de atención:</b> lunes a viernes de 7:00 a.m. a 10:00 p.m. y sábados de 8:00 a.m. a 6:00 p.m.</p>
+</section>
+
+<section id="espacios">
+  <h2>Nuestros espacios</h2>
+
+  <div class="spaces-grid">
+    <div class="space-card">
+      <img src="https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=800&q=80" alt="Puesto flexible de coworking" class="space-img">
+      <div class="space-card-body">
+        <h3>Puesto flexible</h3>
+        <p>Mesa compartida con internet de alta velocidad, café ilimitado y zona común. Ocupa el puesto que prefieras.</p>
+        <span class="space-capacity">Capacidad: 10 puestos</span>
+      </div>
+    </div>
+
+    <div class="space-card">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Escritorio fijo ejecutivo" class="space-img">
+      <div class="space-card-body">
+        <h3>Escritorio fijo</h3>
+        <p>Un escritorio asignado exclusivamente para ti, con cajonera con llave, silla ergonómica y lámpara dedicada.</p>
+        <span class="space-capacity">Capacidad: 6 escritorios</span>
+      </div>
+    </div>
+
+    <div class="space-card">
+      <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=800&q=80" alt="Sala de reuniones ejecutiva" class="space-img">
+      <div class="space-card-body">
+        <h3>Sala de reuniones</h3>
+        <p>Sala ejecutiva para hasta 8 personas equipada con pantalla 4K, tablero de cristal y aire acondicionado.</p>
+        <span class="space-capacity">Capacidad: 2 salas</span>
+      </div>
+    </div>
+
+    <div class="space-card">
+      <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=800&q=80" alt="Oficina privada cerrada" class="space-img">
+      <div class="space-card-body">
+        <h3>Oficina privada</h3>
+        <p>Oficina cerrada acústicamente para equipos de 2 a 4 personas, con acceso privado e iluminación natural.</p>
+        <span class="space-capacity">Capacidad: 3 oficinas</span>
+      </div>
+    </div>
+  </div>
+
+  <h3>Servicios incluidos en todos los espacios</h3>
+  <ul>
+    <li>Internet por fibra óptica simétrica</li>
+    <li>Café de especialidad, té y agua</li>
+    <li>Zona lounge y descanso</li>
+    <li>Impresión y escáner básico</li>
+    <li>Seguridad 24/7 y control de acceso</li>
+    <li>Baños privados y cocineta equipada</li>
+  </ul>
+</section>
+
+<section id="tarifas">
+  <h2>Tarifas (en pesos colombianos)</h2>
+  <p>Los valores se calculan automáticamente según la modalidad de reserva elegida: por hora, por día o por mes.</p>
+
+  <div class="table-responsive">
+    <table>
+      <caption>Valores por espacio</caption>
+      <thead>
+        <tr>
+          <th>Espacio</th>
+          <th>Valor por hora</th>
+          <th>Valor por día</th>
+          <th>Valor por mes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Puesto flexible</td>
+          <td>$8.000</td>
+          <td>$35.000</td>
+          <td>$450.000</td>
+        </tr>
+        <tr>
+          <td>Escritorio fijo</td>
+          <td>$12.000</td>
+          <td>$55.000</td>
+          <td>$750.000</td>
+        </tr>
+        <tr>
+          <td>Sala de reuniones</td>
+          <td>$45.000</td>
+          <td>$280.000</td>
+          <td>$3.200.000</td>
+        </tr>
+        <tr>
+          <td>Oficina privada</td>
+          <td>$60.000</td>
+          <td>$300.000</td>
+          <td>$4.500.000</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Notas sobre las tarifas</h3>
+  <ul>
+    <li>La reserva mensual ofrece hasta un 40% de ahorro frente a reservas diarias individuales.</li>
+    <li>Las reservas por hora operan entre las 7:00 a.m. y las 9:00 p.m.</li>
+  </ul>
+</section>
+
+<section id="reservar">
+  <h2>Crear reserva</h2>
+  <p>Selecciona el espacio, modalidad y fecha. El sistema calculará el valor total automáticamente.</p>
+
+  <form id="form-reserva">
+    <fieldset>
+      <legend>Datos de la reserva</legend>
+
+      <p>
+        <label for="res-correo">Correo del usuario:</label>
+        <input type="email" id="res-correo" name="correo" required>
+      </p>
+
+      <p>
+        <label for="res-espacio">Espacio:</label>
+        <select id="res-espacio" name="espacio" required>
+          <option value="">Selecciona un espacio</option>
+          <option value="flexible">Puesto flexible ($8.000/h · $35.000/día · $450.000/mes)</option>
+          <option value="fijo">Escritorio fijo ($12.000/h · $55.000/día · $750.000/mes)</option>
+          <option value="sala">Sala de reuniones ($45.000/h · $280.000/día · $3.200.000/mes)</option>
+          <option value="oficina">Oficina privada ($60.000/h · $300.000/día · $4.500.000/mes)</option>
+        </select>
+      </p>
+
+      <p>
+        <label>Modalidad de la reserva:</label><br>
+        <span style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:0.4rem;">
+          <span><input type="radio" id="mod-hora" name="modalidad" value="hora" checked> <label for="mod-hora">Por hora</label></span>
+          <span><input type="radio" id="mod-dia" name="modalidad" value="dia"> <label for="mod-dia">Por día</label></span>
+          <span><input type="radio" id="mod-mes" name="modalidad" value="mes"> <label for="mod-mes">Por mes</label></span>
+        </span>
+      </p>
+
+      <p>
+        <label for="res-fecha">Fecha de inicio:</label>
+        <input type="date" id="res-fecha" name="fecha" required>
+      </p>
+
+      <p>
+        <label for="res-hora">Hora de inicio (reservas por hora):</label>
+        <input type="time" id="res-hora" name="hora" min="07:00" max="21:00">
+      </p>
+
+      <p>
+        <label for="res-cantidad">Cantidad (horas, días o meses):</label>
+        <input type="number" id="res-cantidad" name="cantidad" min="1" max="30" value="1" required>
+      </p>
+
+      <p>
+        <label for="res-personas">Número de personas:</label>
+        <input type="number" id="res-personas" name="personas" min="1" max="8" value="1">
+      </p>
+    </fieldset>
+
+    <!-- RESUMEN DINÁMICO EN TIEMPO REAL -->
+    <div class="live-total-banner">
+      <span>Total estimado de la reserva:</span>
+      <strong id="live-total-amount">$0</strong>
+    </div>
+
+    <fieldset>
+      <legend>Servicios adicionales (Sin costo extra)</legend>
+      <p style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-bottom:0;">
+        <span><input type="checkbox" id="ad-proyector" name="adicionales" value="proyector"> <label for="ad-proyector">Proyector HD</label></span>
+        <span><input type="checkbox" id="ad-cafe" name="adicionales" value="cafe"> <label for="ad-cafe">Estación de café</label></span>
+        <span><input type="checkbox" id="ad-impresion" name="adicionales" value="impresion"> <label for="ad-impresion">Pack de impresiones</label></span>
+      </p>
+    </fieldset>
+
+    <p>
+      <label for="res-obs">Observaciones especiales:</label>
+      <textarea id="res-obs" name="observaciones" rows="3" placeholder="Indica si requieres configuración especial de sala o recepción de invitados"></textarea>
+    </p>
+
+    <p>
+      <input type="submit" value="Confirmar reserva">
+      <input type="reset" value="Limpiar formulario">
+    </p>
+  </form>
+</section>
+
+<section id="consultar">
+  <h2>Consultar reservas</h2>
+  <p>Filtra el historial de reservas por correo, rango de fechas, espacio o estado.</p>
+
+  <form id="form-consulta">
+    <fieldset>
+      <legend>Filtros de búsqueda</legend>
+
+      <p>
+        <label for="con-correo">Correo del usuario:</label>
+        <input type="email" id="con-correo" name="correo" placeholder="Todos los usuarios">
+      </p>
+
+      <p>
+        <label for="con-desde">Desde:</label>
+        <input type="date" id="con-desde" name="desde">
+      </p>
+
+      <p>
+        <label for="con-hasta">Hasta:</label>
+        <input type="date" id="con-hasta" name="hasta">
+      </p>
+
+      <p>
+        <label for="con-espacio">Espacio:</label>
+        <select id="con-espacio" name="espacio">
+          <option value="todos">Todos</option>
+          <option value="flexible">Puesto flexible</option>
+          <option value="fijo">Escritorio fijo</option>
+          <option value="sala">Sala de reuniones</option>
+          <option value="oficina">Oficina privada</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="con-estado">Estado:</label>
+        <select id="con-estado" name="estado">
+          <option value="todos">Todos</option>
+          <option value="confirmada">Confirmada</option>
+          <option value="pendiente">Pendiente</option>
+          <option value="cancelada">Cancelada</option>
+        </select>
+      </p>
+
+      <p>
+        <input type="submit" value="Aplicar filtros">
+        <button type="button" id="btn-limpiar-filtros" style="background:transparent; border:1.5px solid var(--color-border); color:var(--color-text-secondary);">Ver todas</button>
+      </p>
+    </fieldset>
+  </form>
+
+  <h3>Listado de reservas</h3>
+  <div class="table-responsive">
+    <table id="tabla-reservas">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Espacio</th>
+          <th>Modalidad</th>
+          <th>Inicio</th>
+          <th>Total</th>
+          <th>Estado</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h3>Disponibilidad en tiempo real (Hoy)</h3>
+  <div class="table-responsive">
+    <table id="tabla-disponibilidad">
+      <thead>
+        <tr>
+          <th>Espacio</th>
+          <th>Capacidad Total</th>
+          <th>Ocupados Hoy</th>
+          <th>Disponibles</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+<section id="preguntas">
+  <h2>Preguntas frecuentes</h2>
+
+  <details>
+    <summary>¿Puedo reservar por hora, por día y por mes?</summary>
+    <p>Sí. Al crear la reserva eliges la modalidad y la cantidad de tiempo que necesitas y el sistema calcula el monto total al instante.</p>
+  </details>
+
+  <details>
+    <summary>¿Qué ocurre si un espacio alcanza su capacidad máxima?</summary>
+    <p>El sistema valida los cupos confirmados para esa fecha y bloquea sobre-reservas automáticamente.</p>
+  </details>
+
+  <details>
+    <summary>¿Puedo cancelar una reserva confirmada?</summary>
+    <p>Sí, puedes cancelarla directamente desde la tabla en la sección "Consultar reservas", liberando el cupo inmediatamente.</p>
+  </details>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <div class="contact-container">
+    <form id="form-contacto">
+      <fieldset>
+        <legend>Envíanos un mensaje</legend>
+        <p>
+          <label for="ct-nombre">Nombre:</label>
+          <input type="text" id="ct-nombre" required>
+        </p>
+        <p>
+          <label for="ct-correo">Correo:</label>
+          <input type="email" id="ct-correo" required>
+        </p>
+        <p>
+          <label for="ct-mensaje">Mensaje:</label>
+          <textarea id="ct-mensaje" rows="4" required></textarea>
+        </p>
+        <p>
+          <input type="submit" value="Enviar mensaje">
+        </p>
+      </fieldset>
+    </form>
+
+    <div class="contact-info-card">
+      <h3>Sede Ejecutiva</h3>
+      <ul>
+        <li>📍 Dirección: Calle 113aa #64bb - 007</li>
+        <li>📞 Teléfono: +57 314 532 4303</li>
+        <li>✉️ Correo: contacto@coworking-ejecutivo.com</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p><a href="#inicio">Volver arriba</a> · <a href="index.html" id="footer-logout">Cerrar sesión</a></p>
+  <p>Sistema de Gestión de Coworking · Desarrollado por Onyx Nox Studios</p>
+</footer>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>

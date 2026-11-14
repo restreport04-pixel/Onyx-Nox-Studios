@@ -1,0 +1,1049 @@
+/* IMPORTACIÓN DE FUENTE SIFISTICADA */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+/* VARIABLES DE CLASE Y DINERO */
+:root {
+    --bg-dark-obsidian: #070B14;   /* Fondo ultra oscuro, elegante */
+    --bg-card-navy: #0F1626;       /* Fondo de tarjetas, profundo */
+    --accent-gold: #D4AF37;        /* Oro metálico clásico */
+    --accent-champagne: #F3E5AB;   /* Crema/Champagne brillante para contrastes suaves */
+    --text-platinum: #F8FAFC;      /* Texto principal brillante */
+    --text-muted: #94A3B8;         /* Texto secundario elegante */
+    --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 100%);
+    --gradient-dark: linear-gradient(180deg, #070B14 0%, #0F1626 100%);
+}
+
+/* RESET PREMIUM */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-dark-obsidian);
+    color: var(--text-platinum);
+    overflow-x: hidden;
+}
+
+/* NAVBAR DE ALTA CLASE */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: rgba(7, 11, 20, 0.95);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--text-platinum);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-gold);
+}
+
+.btn-nav {
+    background: transparent;
+    color: var(--accent-gold);
+    border: 1px solid var(--accent-gold);
+    padding: 10px 22px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-nav:hover {
+    background: var(--gradient-gold);
+    color: var(--bg-dark-obsidian);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+/* HERO SECTION IMPONENTE */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background: radial-gradient(circle at top, #14213d 0%, var(--bg-dark-obsidian) 70%);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    color: var(--accent-gold);
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+}
+
+.accent-text,
+.text-gradient {
+    background: var(--gradient-gold);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    font-size: 19px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-primary {
+    background: var(--gradient-gold);
+    color: var(--bg-dark-obsidian);
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-platinum);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* SECCIONES COMPARTIDAS */
+.services-section, .portfolio-section {
+    padding: 100px 8%;
+    background-color: var(--bg-dark-obsidian);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    color: var(--text-muted);
+    font-size: 16px;
+}
+
+/* CUADRICULA DE TARIFAS (PLANES) */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+.price-card {
+    background-color: var(--bg-card-navy);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(212, 175, 55, 0.2);
+}
+
+/* Tarjeta Destacada Premium */
+.price-card.featured {
+    border: 1px solid var(--accent-gold);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.05);
+}
+
+.badge-featured {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gradient-gold);
+    color: var(--bg-dark-obsidian);
+    padding: 5px 15px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-tier {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.price-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-platinum);
+}
+
+.currency {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.card-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 40px;
+    flex-grow: 1;
+}
+
+.features li {
+    font-size: 14px;
+    color: var(--text-platinum);
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-gold);
+    font-weight: bold;
+}
+
+.btn-card {
+    display: block;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-platinum);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.btn-featured {
+    background: var(--gradient-gold);
+    color: var(--bg-dark-obsidian);
+    border: none;
+}
+
+.btn-featured:hover {
+    background: var(--accent-champagne);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+}
+
+/* PORTAFOLIO DEMO SECCIÓN */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.portfolio-item {
+    background: linear-gradient(90deg, var(--bg-card-navy) 0%, rgba(15, 22, 38, 0.5) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.client-tag {
+    font-size: 12px;
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.portfolio-info h3 {
+    font-size: 28px;
+    margin: 10px 0 15px 0;
+}
+
+.portfolio-info p {
+    color: var(--text-muted);
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.view-demo-link {
+    color: var(--accent-gold);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.view-demo-link:hover {
+    color: var(--accent-champagne);
+}
+
+/* FOOTER ELEGANTE */
+footer {
+    background-color: #04070D;
+    padding: 60px 8% 30px 8%;
+    border-top: 1px solid rgba(212, 175, 55, 0.05);
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-brand h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.footer-links h4 {
+    font-size: 15px;
+    color: var(--accent-gold);
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    display: block;
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--text-platinum);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.02);
+    padding-top: 30px;
+    font-size: 13px;
+    color: #475569;
+}
+
+/* DISEÑO RESPONSIVO DE CLASE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .nav-links {
+        gap: 20px;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .hero-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .portfolio-item {
+        padding: 25px;
+    }
+}
+
+/* SECCIÓN MANTENIMIENTO MENSUAL */
+.maintenance-section {
+    padding: 60px 8%;
+    background: linear-gradient(180deg, var(--bg-dark-obsidian) 0%, #0c1424 100%);
+    border-top: 1px solid rgba(212, 175, 55, 0.05);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.05);
+}
+
+.maintenance-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-card-navy);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: 20px;
+    padding: 50px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.maintenance-text {
+    flex: 1 1 45%;
+}
+
+.maintenance-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.maintenance-text p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.maintenance-price {
+    margin-top: 20px;
+}
+
+.m-price {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--accent-gold);
+}
+
+.m-currency {
+    font-size: 16px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.maintenance-features-box {
+    flex: 1 1 45%;
+    background: rgba(7, 11, 20, 0.5);
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.m-features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.m-features li {
+    font-size: 14px;
+    color: var(--text-platinum);
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.m-features li::before {
+    content: "🔒";
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+}
+
+.maintenance-features-box .btn-primary {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .maintenance-container {
+        padding: 30px 20px;
+        flex-direction: column;
+    }
+}
+
+/* ESTILO BOTÓN FLOTANTE WHATSAPP */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+    background-color: #20ba5a;
+}
+
+/* Evitar que se tape en celulares si el contenido es muy estrecho */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* ESTILOS DE LA PÁGINA DE DETALLE DE PLANES */
+.plan-detail-page {
+    background-color: var(--bg-dark-obsidian);
+    color: var(--text-platinum);
+    font-family: sans-serif; /* O la tipografía que estés usando */
+    padding: 40px 5%;
+}
+
+.nav-back-container {
+    margin-bottom: 30px;
+}
+
+.btn-back {
+    color: var(--accent-gold);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.btn-back:hover {
+    color: #fff;
+}
+
+.plan-detail-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.plan-badge {
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--accent-gold);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.plan-header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.plan-description {
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.plan-price-large {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--accent-gold);
+}
+
+.plan-price-large .currency {
+    font-size: 18px;
+    color: var(--text-muted);
+}
+
+.plan-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.plan-includes-box {
+    flex: 2 1 600px;
+    background-color: var(--bg-card-navy);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.plan-includes-box h3, .plan-cta-box h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.detailed-features-list {
+    list-style: none;
+}
+
+.detailed-features-list li {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 30px;
+}
+
+.detailed-features-list li::before {
+    content: "⚡";
+    position: absolute;
+    left: 0;
+    color: var(--accent-gold);
+}
+
+.plan-cta-box {
+    flex: 1 1 350px;
+    background: linear-gradient(145deg, #0d1627 0%, #060a12 100%);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    align-self: flex-start;
+}
+
+.plan-cta-box p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.btn-whatsapp-plan {
+    width: 100%;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp-plan:hover {
+    background-color: #20ba5a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+.plan-requirements {
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+}
+
+.plan-requirements h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: var(--accent-gold);
+}
+
+.plan-requirements ul {
+    list-style: none;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.plan-requirements ul li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .plan-grid {
+        flex-direction: column;
+    }
+} 
+
+/* AJUSTE LOGO INTERMEDIO PERFECTO (SIN CORTAR Y MÁS GRANDE) */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;       /* Ancho ideal en tu barra para que no empuje el menú */
+    height: 70px;       /* Altura perfecta en el navbar */
+    overflow: hidden;   /* Recorta limpiamente las esquinas vacías de la imagen */
+    text-decoration: none;
+}
+
+.nav-logo {
+    width: 100%;
+    height: 100%;
+    /* Rellena el contenedor para que juegue a favor del tamaño */
+    object-fit: cover; 
+    
+    /* ¡AQUÍ ESTÁ LA MAGIA INTERMEDIA!
+       - scale(1.5): Un zoom moderado. No es el 2.2 de antes que lo cortaba, ni el 1.0 que lo encogía.
+       - object-position: centrado horizontalmente (center) y subimos un 45% para enfocar el texto */
+    transform: scale(1.5);
+    object-position: center 45%; 
+
+    /* Filtros premium para que la letra y el dorado brillen con nitidez 4K */
+    filter: contrast(1.15) brightness(1.3) drop-shadow(0 0 10px rgba(212, 175, 55, 0.4));
+    
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Efecto elegante al pasar el mouse */
+.logo-container:hover .nav-logo {
+    transform: scale(1.35); /* Crece solo un toque sutil */
+    filter: contrast(1.2) brightness(1.4) drop-shadow(0 0 15px rgba(212, 175, 55, 0.55));
+}
+
+/* SELECTOR DE REGIÓN / MONEDA EN NAVBAR */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.region-switcher {
+    display: flex;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 50px;
+    padding: 3px;
+}
+
+.region-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.region-btn.active {
+    background: var(--gradient-gold);
+    color: var(--bg-dark-obsidian);
+}
+
+/* SECCIÓN FORMULARIO DE CONTACTO */
+.contact-section {
+    padding: 90px 8%;
+    background-color: var(--bg-dark-obsidian);
+    border-top: 1px solid rgba(212, 175, 55, 0.06);
+}
+
+.contact-form {
+    max-width: 680px;
+    margin: 0 auto;
+    background-color: var(--bg-card-navy);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(212, 175, 55, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    background-color: rgba(7, 11, 20, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    color: var(--text-platinum);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: var(--accent-gold);
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .nav-actions {
+        flex-direction: column;
+    }
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    .contact-form {
+        padding: 25px 20px;
+    }
+}
+
+/* CALCULADORA DE PRESUPUESTO */
+.calculator-section {
+    padding: 90px 8%;
+    background: linear-gradient(180deg, var(--bg-dark-obsidian) 0%, #0b1120 100%);
+    border-top: 1px solid rgba(212, 175, 55, 0.08);
+}
+
+.calculator-box {
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: var(--bg-card-navy);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 22px;
+    padding: 45px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.calc-group {
+    margin-bottom: 25px;
+}
+
+.calc-group:last-child {
+    margin-bottom: 0;
+}
+
+.calc-group h4 {
+    color: var(--accent-gold);
+    font-size: 15px;
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+}
+
+.calc-radio-card,
+.calc-check-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(7, 11, 20, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 13px 16px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--text-platinum);
+    transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.calc-radio-card:hover,
+.calc-check-item:hover {
+    border-color: rgba(212, 175, 55, 0.45);
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.calc-radio-card input,
+.calc-check-item input {
+    accent-color: var(--accent-gold);
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.calc-summary {
+    background: linear-gradient(145deg, #070b14 0%, #121c33 100%);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 18px;
+    padding: 35px 28px;
+    text-align: center;
+}
+
+.calc-summary-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--accent-gold);
+    font-weight: 600;
+}
+
+.calc-total-display {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--text-platinum);
+    margin: 12px 0;
+}
+
+.calc-note {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.calc-summary .btn-primary {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* MODAL LEGAL */
+.legal-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(4, 7, 13, 0.85);
+    backdrop-filter: blur(6px);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.legal-modal.open {
+    display: flex;
+}
+
+.legal-modal-content {
+    background: var(--bg-card-navy);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 18px;
+    max-width: 650px;
+    width: 100%;
+    padding: 35px;
+    position: relative;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.legal-close-btn {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.legal-close-btn:hover {
+    color: var(--accent-gold);
+}
+
+.legal-modal-content h3 {
+    color: var(--accent-gold);
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+.legal-modal-body p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 14px;
+}
+
+.legal-modal-body strong {
+    color: var(--text-platinum);
+}
+
+@media (max-width: 850px) {
+    .calculator-box {
+        grid-template-columns: 1fr;
+        padding: 28px 20px;
+    }
+}

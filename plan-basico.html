@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Esencial: El Impulso | Onyx Nox Studios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body class="plan-detail-page" data-plan-page="basic">
+
+    <div class="nav-back-container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+        <a href="index.html" class="btn-back" data-i18n="back_home">← Volver al Inicio</a>
+        <div class="region-switcher" role="group" aria-label="Selector de región y moneda">
+            <button type="button" class="region-btn active" data-region="es">ES · €</button>
+            <button type="button" class="region-btn" data-region="us">US · $</button>
+        </div>
+    </div>
+
+    <main class="plan-detail-container">
+        <div class="plan-header">
+            <span class="plan-badge" data-i18n="pb_badge">Plan Esencial</span>
+            <h1 data-i18n="pb_title">Plan Esencial: El Impulso</h1>
+            <p class="plan-description" data-i18n="pb_desc">La solución estratégica para negocios locales y marcas que buscan proyectar autoridad desde el primer día y convertir visitas en clientes directos.</p>
+            <div class="plan-price-large"><span id="detail-price">260 €</span> <span class="currency" id="detail-curr">EUR / Pago Único</span></div>
+        </div>
+
+        <div class="plan-grid">
+            <div class="plan-includes-box">
+                <h3 data-i18n="detail_includes_title">¿Qué incluye exactamente este plan?</h3>
+                <ul class="detailed-features-list">
+                    <li data-i18n="pb_f1"><strong>Landing Page de Alto Impacto (1 Página):</strong> Estructurada estratégicamente para captar atención y guiar al cliente hacia el contacto.</li>
+                    <li data-i18n="pb_f2"><strong>Catálogo o Sección de Servicios:</strong> Espacio limpio y optimizado para mostrar tus servicios principales, fotografías y precios claros.</li>
+                    <li data-i18n="pb_f3"><strong>Botones de Acción Directos:</strong> Enlaces configurados a WhatsApp, llamada o formulario para recibir consultas formateadas al instante.</li>
+                    <li data-i18n="pb_f4"><strong>Diseño 100% Adaptable (Mobile-First):</strong> Visualización impecable en iPhone, Android, tablet y ordenador.</li>
+                    <li data-i18n="pb_f5"><strong>Optimización de Velocidad:</strong> Compresión de recursos para tiempos de carga ultrarrápidos.</li>
+                    <li data-i18n="pb_f6"><strong>Acompañamiento Inicial:</strong> Entrega llave en mano y 7 días de soporte técnico tras el lanzamiento.</li>
+                </ul>
+            </div>
+
+            <div class="plan-cta-box">
+                <h3 data-i18n="pb_cta_title">¿Listo para arrancar?</h3>
+                <p data-i18n="pb_cta_desc">Al pulsar el botón, te comunicarás directamente con nuestro equipo de desarrollo para coordinar el inicio de tu proyecto.</p>
+                
+                <button type="button" id="btn-contratar-detalle" class="btn-whatsapp-plan" data-i18n="pb_cta_btn">
+                    🚀 Iniciar Plan Esencial por WhatsApp
+                </button>
+
+                <div class="plan-requirements">
+                    <h4 data-i18n="req_title">Requisitos para iniciar:</h4>
+                    <ul>
+                        <li data-i18n="pb_req1">Logotipo de tu negocio (en buena calidad).</li>
+                        <li data-i18n="pb_req2">Fotografías de tus servicios o productos.</li>
+                        <li data-i18n="pb_req3">Textos, servicios y precios actualizados.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
