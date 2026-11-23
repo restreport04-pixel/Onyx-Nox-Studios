@@ -74,6 +74,12 @@ document.addEventListener("DOMContentLoaded", () => {
             footer_tagline: "Arquitectura web y soluciones digitales de alto nivel.",
             footer_connect: "Conectemos",
             footer_rights: "Todos los derechos reservados.",
+            demo1_tag: "Frontend Web • HTML5 / CSS3 / JS",
+            demo1_title: "Sistema de Coworking Ejecutivo (Interfaz Web)",
+            demo1_desc: "Prototipo interactivo de alta velocidad con diseño responsivo, cálculo dinámico de tarifas por hora/día/mes y simulación de reservas en cliente.",
+            demo2_tag: "Full-Stack Enterprise • Java + Vaadin + PostgreSQL",
+            demo2_title: "Sistema de Coworking Cloud (Arquitectura Java)",
+            demo2_desc: "Aplicación empresarial con arquitectura en capas, portal dual (Cliente y Administrador), persistencia real en base de datos PostgreSQL (Neon) y despliegue en Docker. (Nota: El servidor gratuito puede tardar ~45s en despertar tras inactividad).",
             
 
             // Detalles Plan Básico
@@ -240,6 +246,12 @@ document.addEventListener("DOMContentLoaded", () => {
             footer_tagline: "High-end web architecture and digital growth solutions.",
             footer_connect: "Connect",
             footer_rights: "All rights reserved.",
+            demo1_tag: "Web Frontend • HTML5 / CSS3 / JS",
+            demo1_title: "Executive Coworking System (Web Interface)",
+            demo1_desc: "High-speed interactive prototype featuring responsive design, dynamic hourly/daily/monthly rate calculation, and client-side booking simulation.",
+            demo2_tag: "Full-Stack Enterprise • Java + Vaadin + PostgreSQL",
+            demo2_title: "Cloud Coworking System (Java Architecture)",
+            demo2_desc: "Enterprise layered application featuring a dual portal (Client & Admin), real database persistence on PostgreSQL (Neon), and Docker cloud deployment. (Note: Free server may take ~45s to wake up after inactivity).",
 
             // Essential Plan Details
             pb_badge: "Essential Plan",
